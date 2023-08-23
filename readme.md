@@ -6,6 +6,7 @@
 ```
 git clone https://github.com/molodcovnik/book_shop.git
 npm install
+npm run build-dev
 npm run start
 ```
 
