@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family:'Montserrat';
+    background-color: $background;
+    color: $text;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.wrapper-all {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+ hr {
+    margin: 0 auto;
+ }
+
+.header {
+    min-width: 100%;
+    height: 116px;
+}
+
+ .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+ }
+
+ .header-menu ul {
+    display: flex;
+ }
+
+ .header-menu li {
+    margin: 0 2rem;
+ }
+
+ .header-menu li:hover {
+    color: $hover-text;
+ }
+
+ .header-icons ul {
+    display: flex;
+ }
+
+ .header-icons li {
+    margin: 0 1.5rem;
+ }
+
+ .header-icons li:last-child{
+    margin-right: 10rem;
+ }
+
+ .header-logo {
+    align-self: center;
+    color: $main-text;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10rem;
+ }
+
+ .header-menu {
+    align-self: center;
+ }
+
+ .header-icons {
+    position: relative; //удалить если что
+    align-self: center;
+ }
+
+.wrapper-promo {
+    position: relative;
+
+}
+
+ .promo {
+    width: 1120px;
+    height: 720px;
+    margin: 0 auto;    
+   
+ }
+.promo img{
+    width: 1120px;
+    
+    height: 720px; 
+   
+}
+
+.round-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;    
+}
+
+.btn-round {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    margin: 0 .35rem;
+    cursor: pointer;
+    background-color: #d7d6dd;
+}
+
+.btn-round:hover{
+    width: 15px;
+    height: 15px;
+    background-color: #b0afb5;
+}
+
+.btn-round:nth-of-type(1) {
+    background-color: #9E98DC;
+}
+
+.btn-round:nth-of-type(1):hover {
+    width: 15px;
+    height: 15px;
+    background-color: #928cd0;
+}
+
+.btn-round:nth-of-type(2n) {
+    cursor: none;
+}
+
+.btn-round:nth-of-type(2n):hover {
+    width: 12px;
+    height: 12px;
+    background-color: #d7d6dd;
+}
+
+.hidden {
+    display: none;
+}
+
+.banner {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 200px;
+    top: 79px;
+    right: 10%;
+    background-color: #9E98DC;
+    color: $main-text;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    
+}
+
+.banner-2 {
+    width: 137px;
+    height: 273px;
+    background-color: #FF8FE6;
+    top: 380px;
+    right: 0px;
+}
+
+.banner-content {
+    margin: auto 20px 16px;
+}
+
+.category-list {
+    width: 30%;
+    height: 710px;
+    background-color: #EFEEF6;    
+} 
+
+.category-list > ul {
+    padding-top: 45px;
+}
+
+.category-list li {
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 35%;
+    margin-top: 23px;
+    
+}
+
+
+.main-content {
+    
+    display: flex;
+    padding-top: 106px;
+    // width: 800px;
+    // margin: 0 auto;
+   
+}
+
+.books-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    width: 75%;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.books-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // position: absolute;
+    // height: 1188px;
+    // width: 970px;
+    height: inherit;
+    width: inherit;
+    // background-color: #d3d1e9;
+    // margin-top: 50px;
+    // margin-left: 356px;
+}
+
+
+.book {
+    height: 300px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    // gap: 1rem;
+    margin-bottom: 96px;
+    // border: 2px solid black;
+    
+}
+
+.btn {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 176px;
+    height: 45px;
+    padding: auto;
+    border: 2px solid #4C3DB2;
+    background-color: $background;
+    color: #4C3DB2;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.book-main-info {
+    width: 167px;
+    height: 203px;
+    margin: auto;
+}
+
+.book img {
+    width: 212px;
+    height: 300px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    
+}
+
+.ratings> p:first-of-type{
+    color: rgb(242, 200, 36);
+    font-size: 20px;
+    align-self: center;
+    
+}
+.ratings> p:last-of-type{
+    // align-self: center;
+    font-size: 12px;
+    margin-top: 10px;
+    
+}
+
+
+.book-autors, .ratings, .book-description {
+    color: $text;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.book-title {
+    color: $main-text;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.7em;
+    height: 5.4em;
+}
+
+.book-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.7em;
+    height: 5.4em;
+}
+
+.book-price {
+    color: $main-text;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.active-category {
+    color: $main-text;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.parent-active-category {
+    list-style:disc;
+}
+
+.parent-active-category::marker{
+    color: #756AD3;
+}
+
+.category-list li:hover {
+    color: $hover-text;
+}
+
+// .cart {
+//     position: relative;
+// }
+
+// .cart::after {
+//     position: absolute;
+//     content:"";
+    
+//     display: inline-block;
+//     padding-right: 15px;
+//     height: 15px;
+//     right: -14px;
+//     top: 6px;
+//     margin-right: 10px;
+//     background-color: #b41212;
+//     border-radius: 50%;
+//     opacity: 0.85;
+// }
+
+.active-cart {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: #b41212;
+    border-radius: 50%;
+    // opacity: 0.85;
+    right: 150px;
+    top: 6px;
+
+}
+
+.buy-counter {
+    text-align: center;
+    font-size: 9px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+// блок индикатора скролла
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #8175cb;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+  }
+
+//   конец блока
